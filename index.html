@@ -7,49 +7,50 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
   <link rel="script" type="script/js" href="scripts/scripts.js">
   <title>Assignment 2</title>
 </head>
 <body>
   <div class="hero-image">
-    <div class="hero-title">
+    <div class="hero-title" tabindex="0">
       <h1>Juan Tovar Photography</h1>
     </div>
-    <div class="hero-text">
+    <div class="hero-text" tabindex="0">
       <p>Welcome to my afficionate-photography website</p>
     </div>
   </div>
   <section class="content-container">
-      <div class="content-text">
+      <div class="content-text" tabindex="0">
         <h2>About</h2>
               <p>Web Design Major international SAIT student, Juan Tovar, has started this website where he could show this skills as an affitionate photographer. His pictures are mostly of his new life in Calgary, Canadian landscapes and things of his interest.</p>
             </div>
   </section>
   <section class="video-container">
-<div class="video">
-<video controls src="Introduction video_2.mp4" width="500"></video>
+<div class="video" tabindex="0">
+<video controls src="Introductionvideo.mp4" width="500"></video>
     </div>
   </section>
   <section class="card-container">
     <div class="row">
       <div class="column">
-      <div class="card">
-        <img src="assets/Card Image 1.png" alt="Manizales" style="width: 100%">
+      <div class="card" tabindex="0">
+        <img src="assets/CardImage1.webp" alt="Manizales" height="450" width="450" loading="lazy">
     <h4><b>Manizales-Colombia</b></h4>
     <p>City where I made my Journalism internships.</p>
-  </div>
+      </div>
 </div>
 <div class="column">
-  <div class="card">
-    <img src="assets/Card Image 2.png" alt="Boxing" style="width: 100%">
+  <div class="card" tabindex="0">
+    <img src="assets/CardImage2.webp" alt="Boxing" height="450" width="400" loading="lazy">
     <h4><b>Cali-Colombia</b></h4>
     <p>Taking boxing lessons in my hometown Cali-Colombia.</p>
   </div>
 </div>
 <div class="column">
-  <div class="card">
-    <img src="assets/Card Image 3.png" alt="La Esmeralda" style="width: 100%">
+  <div class="card" tabindex="0">
+    <img src="assets/CardImage3.webp" alt="La Esmeralda" height="450" width="450" loading="lazy">
     <h4><b>Pance-Colombia</b></h4>
     <p>Having some fun at the La Esmeralda Waterfal.</p>
   </div>
@@ -60,16 +61,16 @@
     <h2>Additional Information</h2>
     <div class="accordion">
       <input type="radio" name="accordion" id="button-accordion1" class="button-accordion">
-      <label for="button-accordion1">
+      <label for="button-accordion1" tabindex="0">
       <h3>About the Creator (in his own words)</h3>
     </label>
 <div class="accordion-text">
       <p>Colombian national, I arrived in Canada -specifically in Calgary- in August 2023, after being accepted in the Web Design and Major Development program offered by SAIT. I have a strong bond and sense of belonging to my culture and identify myself as a Latino. I'm also passionate about soccer (I'm a huge Chelsea Football Club supporter), I love listening to Green Day, Sum 41, Kodaline, Simple Plan, Coldplay, and OneRepublic, coffee (to the point that if I don't have it, I'll eventually fall asleep), nature, beer, and sunsets. As an effort of making my social circle bigger, I decided to create this affitionate-photography website and show what I normally do in my free time.</p>
   </div>  
 </div>
-    </label><div class="accordion">
+<div class="accordion">
       <input type="radio" name="accordion" id="button-accordion2" class="button-accordion">
-      <label for="button-accordion2">
+      <label for="button-accordion2" tabindex="0">
       <h3>The Reason Behind This</h3>
     </label>
   <div class="accordion-text">
@@ -79,7 +80,8 @@
     </section>
     <footer>
   <section class="footer-container">
-  <div class="footer-information">
+    <div class="footer-column">
+  <div class="footer-information" tabindex="0">
     <h2>Information</h2>
     <ul>
       <li> <a href="#about">About</a></li>
@@ -87,7 +89,9 @@
       <li> <a href="#video">Introduction Video</a></li>
     </ul>
     </div>
-    <div class="footer-information">
+  </div>
+  <div class="footer-column">
+    <div class="footer-information" tabindex="0">
       <h2>Follow Me on Social Media</h2>
       <div class="social-logos">
         <a href="https://fontawesome.com/icons/facebook?f=brands&s=solid" target="_blank" aria-label="Facebook">
@@ -101,9 +105,10 @@
       </a>
       </div>
     </div>
+  </div>
     </div>
   <div class="footer-bottom">
-    <p> Copyright <span id="cyear"></span> by Juan Tovar Photography.
+    <p> Copyright <script>document.write(new Date().getFullYear())</script> by Juan Tovar Photography.
       All rights reserved.</p>
   </div>
   </section>
